@@ -35,7 +35,7 @@ public class ButtonShapeData : MonoBehaviour
     public void UpdateButtonShapeData(ShapeSO shape)
     {
         this.shape = shape;
-        text.text = shape.name;
+        text.text = shape.shapeName;
         text.color = shape.shapeColor;
     }
 
