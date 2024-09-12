@@ -12,7 +12,7 @@ public class Shape : MonoBehaviour
         Renderer cubeRenderer = this.GetComponent<Renderer>();
         if (cubeRenderer != null)
         {
-            cubeRenderer.sharedMaterial.color = color; 
+            cubeRenderer.material.color = color; 
         }
         else
         {

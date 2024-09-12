@@ -34,9 +34,9 @@ public class ButtonShapeData : MonoBehaviour
         Vector3 worldPosition = cameraMain.ScreenToWorldPoint(cursorPos);
 
         GameObject shapePrefab = shape.shapePrefab;
-        Shape shapeData = shapePrefab.GetComponent<Shape>();
+        GameObject shapeGO = Instantiate(shapePrefab, worldPosition, Quaternion.identity);
+        Shape shapeData = shapeGO.GetComponent<Shape>();
         shapeData.shapeData = shape;
         shapeData.UpdateShapeColor(shape.shapeColor);
-        Instantiate(shapePrefab, worldPosition, Quaternion.identity);
     }
 }
