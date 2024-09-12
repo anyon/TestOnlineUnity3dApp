@@ -16,7 +16,6 @@ public class ShapeMover : MonoBehaviour
 
     private void Start()
     {
-       isMoving = true;
         SetMainCamera();
     }
 
