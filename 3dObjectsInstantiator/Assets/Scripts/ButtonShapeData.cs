@@ -54,6 +54,7 @@ public class ButtonShapeData : MonoBehaviour
             Shape shapeData = shapeGO.GetComponent<Shape>();
             shapeData.shapeData = shape;
             shapeData.UpdateShapeColor(shape.shapeColor);
+            shapeGO.name = shape.shapeName;
             MouseInputManager.Instance.ItemPlaced();
         }
     }
